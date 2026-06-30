@@ -33,6 +33,6 @@ For the initial commit, this repository contains the core domain models, the mai
  ┣ 📂 lib                  # External dependencies (Choco-solver, SQLite JDBC, Apache POI)
  ┣ 📂 src
  ┃ ┣ 📂 models             # Core Java classes (Student, Professor, Classroom)
- ┃ ┗ 📂 Main          # Application entry point and CLI menu
+ ┃ ┗ 📂 Main               # Application entry point and CLI menu
  ┣ 📜 README.md
  ┗ 📜 .gitignore           # Excluding compiled .class files, IDE settings, and local DBs
