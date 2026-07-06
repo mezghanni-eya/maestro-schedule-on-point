@@ -9,6 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import models.Classroom;
 
+/**
+ * Data Access Object (DAO) for the Classroom entity.
+ * Handles all CRUD operations and direct database interactions with the 'classrooms' table,
+ * abstracting SQL queries away from the core business logic.
+ */
+
 public class ClassroomDAO{
 
     public void createTable(){
