@@ -9,6 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import models.Archive;
 
+/**
+ * Data Access Object (DAO) for the Archive entity.
+ * Manages the persistence, tracking, and retrieval of historical records,
+ * ensuring immutable data logs are securely decoupled from active database tables.
+ */
+
 public class ArchiveDAO {
 
     public void createTable(){
@@ -82,7 +88,7 @@ public class ArchiveDAO {
         try {
             Connection conn = DatabaseConnection.getInstance();
             PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM archives WHERE name LIKE ? AND type = ? ORDER BY archive_date");
-            pstmt.setString(1, "%" + name + "%"); // Le % permet de trouver même si on tape juste une partie du nom
+            pstmt.setString(1, "%" + name + "%"); 
             pstmt.setString(2, type);
             
             ResultSet rs = pstmt.executeQuery();
