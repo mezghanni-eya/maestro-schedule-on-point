@@ -9,6 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import models.Professor;
 
+/**
+ * Data Access Object (DAO) for the Professor entity.
+ * Manages persistence, retrieval, and relational mapping between the Professor model 
+ * and the corresponding database storage.
+ */
+
 public class ProfessorDAO{
 
     public void createTable(){
