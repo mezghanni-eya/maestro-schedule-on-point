@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 import models.Student;
 
+/**
+ * Data Access Object (DAO) for the Student entity.
+ * Provides a secure layer to execute database operations for student records,
+ * isolating SQL infrastructure from the rest of the application.
+ */
+
 public class StudentDAO{
 
     public void createTable(){
